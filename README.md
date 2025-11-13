@@ -1,4 +1,4 @@
-# Animal dMRI Collections — `data-others/animal`
+# Animal dMRI Collections
 
 The **Animal dMRI Collections** repository consolidates diffusion MRI (dMRI), tractography-ready derivatives, and curated documentation from a diverse set of **preclinical and non-human primate imaging studies**.
 This collection brings together datasets from mice, rats, marmosets, macaques, horses, and other primate species—spanning **in vivo**, **ex vivo**, and **post-mortem** imaging.
