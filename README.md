@@ -42,18 +42,13 @@ All raw data remain hosted by the original publishers (Zenodo, Dryad, institutio
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/nyu-mouse \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/nyu-mouse  | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ````
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/nyu-mouse").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/nyu-mouse").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -84,18 +79,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/nyu-mouse 
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/nki-macaque \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/nki-macaque | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/nki-macaque").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/nki-macaque").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -126,18 +116,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/nki-macaqu
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/ne-rat-tbi \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/ne-rat-tbi | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/ne-rat-tbi").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/ne-rat-tbi").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -168,18 +153,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/ne-rat-tbi
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/ifce-tesbd \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/ifce-tesbd | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/ifce-tesbd").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/ifce-tesbd").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -210,18 +190,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/ifce-tesbd
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/drcmr \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/drcmr | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/drcmr").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/drcmr").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -252,18 +227,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/drcmr \
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/uw-macaque \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/uw-macaque | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/uw-macaque").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/uw-macaque").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -294,18 +264,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/uw-macaque
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/utrecht-rat \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/utrecht-rat | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/utrecht-rat").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/utrecht-rat").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -336,18 +301,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/utrecht-ra
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/unil-forpaw \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/unil-forpaw | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/unil-forpaw").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/unil-forpaw").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -378,18 +338,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/unil-forpa
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -420,18 +375,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/riken-marm
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset-exvivo \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset-exvivo | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset-exvivo").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/riken-marmoset-exvivo").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -462,18 +412,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/riken-marm
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus-t1t2 \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus-t1t2 | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus-t1t2").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus-t1t2").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -505,18 +450,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/prime-de-r
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/prime-de-rhesus").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -547,18 +487,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/prime-de-r
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/pitt-marmoset \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/pitt-marmoset | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/pitt-marmoset").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/pitt-marmoset").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -588,18 +523,13 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/pitt-marmo
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/oxford-win-macaque \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/oxford-win-macaque | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/oxford-win-macaque").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/oxford-win-macaque").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
 
 ---
@@ -630,16 +560,11 @@ curl -s https://api.github.com/repos/data-others/animal/releases/tags/oxford-win
 **Download (macOS / Linux)**
 
 ```bash
-curl -s https://api.github.com/repos/data-others/animal/releases/tags/oxford-pbb \
-  | jq -r '.assets[].browser_download_url' \
-  | xargs -n1 -P4 curl -LO
+curl -s https://api.github.com/repos/data-others/animal/releases/tags/oxford-pbb | jq -r '.assets[].browser_download_url' | xargs -n1 -P4 curl -LO
 ```
 
 **Download (Windows PowerShell)**
 
 ```powershell
-(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/oxford-pbb").assets |
-  ForEach-Object {
-    Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf)
-  }
+(Invoke-RestMethod "https://api.github.com/repos/data-others/animal/releases/tags/oxford-pbb").assets | ForEach-Object { Invoke-WebRequest $_.browser_download_url -OutFile (Split-Path $_.browser_download_url -Leaf) }
 ```
